@@ -1,11 +1,35 @@
-
-
 div{
    width: 200px;
    height: 300px;
    margin: 20px;
    padding: 10px;
    background-color: rgb(187, 250, 245);
-   border:rgb(230, 194, 255) 5px solid;
+   border:rgb(230, 194, 255) 5px outset;
 }   
 
+div{
+   background-color:rgba(172, 255, 47, 0.623);
+}
+
+.zolty{
+   background-color:rgba(255, 243, 72, 0.637);
+}
+
+/* wszystkie */
+.szeroki{
+   width:600px;
+}
+
+/* tylko divy */
+div.szeroki{
+
+}
+
+/* id tylko do jednego dokumentu*/
+#czerwony{
+   background-color: rgba(255, 35, 35, 0.452);
+}
+
+footer{
+   
+}
