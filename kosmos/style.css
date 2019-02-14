@@ -3,6 +3,13 @@
    margin:0;
    padding:0;
 }
+
+.hidden{
+   display:none;
+}
+
+/* HEADER ==============================*/
+
 .header-main{
 display: flex;
 justify-content: center;
@@ -15,4 +22,64 @@ background-repeat: no-repeat;
 background-position:left bottom;
 /* Nie wolno!!-słaba jakość... */
 background-size: 365px;
+}
+/* bax-sizing:border-box
+-padding nie zwiększa rozmiaru, nic się nie przesuwa */
+
+
+/* OFFERS ==============================*/
+
+.offers{
+   background-color: #17171A;
+}
+
+.offers-single{
+background-color:aquamarine;
+width: 256px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content:center;
+}
+
+.offers-single img{
+   width: 200px;
+   margin-bottom: 20px;
+}
+
+.offers-single h3{
+   font-family: 'Roboto', sans-serif;
+   /* wyświetl Roboto, jak nie ma to sans-serif */
+   font-weight: 500;
+   color:#fff;
+   font-size: 18px;
+   text-transform: uppercase;
+   margin-bottom: 10px;
+}
+
+.offers-single p{
+   font-family: sans-serif;
+   font-weight: normal;
+   color: #fff;
+   font-size: 14px;
+   text-align: center;
+   margin-bottom: 10px;
+}
+
+.offers-single a{
+   background-color: #F1B26F;
+   color: #17171A;
+   text-decoration: none;
+   padding: 10px 16px;
+   /* góra, dół  , prawo,lewo */
+   font-family: sans-serif;
+   font-weight: bold;
+   border-radius: 6px;
+   text-transform: uppercase;
+   transition: .3s;
+}
+
+/* jak najedziemy myszką */
+.offers-single a:hover{
+background-color: #fff;
 }
