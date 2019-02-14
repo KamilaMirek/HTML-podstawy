@@ -77,6 +77,7 @@ justify-content:center;
    border-radius: 6px;
    text-transform: uppercase;
    transition: .3s;
+   font-size: 13px;
 }
 
 /* jak najedziemy myszką */
