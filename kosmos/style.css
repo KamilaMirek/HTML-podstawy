@@ -88,3 +88,31 @@ justify-content:center;
 .offers-single a:hover{
 background-color: #fff;
 }
+
+/* NAVIGACJA ==============================*/
+
+.navbar{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 80px;
+   background-color: #fff;
+   /* ----------!------
+   overflow: hidden-dzieci nie wystaja z rodzica */
+}
+
+.navbar a{
+text-decoration: none;
+height: 80px;
+}
+
+.navbar a img{
+   height: 80px;
+}
+
+.navbar ul{
+   display: flex;
+   list-style: none;
+   justify-content: center;
+   align-items: center;
+}
