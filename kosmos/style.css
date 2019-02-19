@@ -30,11 +30,14 @@ background-size: 365px;
 /* OFFERS ==============================*/
 
 .offers{
+   display:flex;
+   justify-content: space-evenly;
    background-color: #17171A;
+   flex-wrap: wrap;
 }
 
 .offers-single{
-background-color:aquamarine;
+margin:20px;
 width: 256px;
 display: flex;
 flex-direction: column;
@@ -55,6 +58,7 @@ justify-content:center;
    font-size: 18px;
    text-transform: uppercase;
    margin-bottom: 10px;
+   text-align: center;
 }
 
 .offers-single p{
