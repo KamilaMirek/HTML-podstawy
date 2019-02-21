@@ -8,6 +8,10 @@
    display:none;
 }
 
+body{
+   margin-top:80px;
+}
+
 /* HEADER ==============================*/
 
 .header-main{
@@ -22,6 +26,7 @@ background-repeat: no-repeat;
 background-position:left bottom;
 /* Nie wolno!!-słaba jakość... */
 background-size: 365px;
+
 }
 /* bax-sizing:border-box
 -padding nie zwiększa rozmiaru, nic się nie przesuwa */
@@ -99,6 +104,9 @@ background-color: #fff;
    background-color: #fff;
    /* ----------!------
    overflow: hidden-dzieci nie wystaja z rodzica */
+   position:fixed;
+   width:100%;
+   top:0;
 }
 
 .navbar a{
@@ -116,3 +124,65 @@ height: 80px;
    justify-content: center;
    align-items: center;
 }
+
+.navbar ul li{
+margin-right:14px;
+}
+
+.navbar ul li a{
+   background-color: #F1B26F;
+   color: #17171A;
+   text-decoration: none;
+   padding: 10px 16px;
+   /* góra, dół  , prawo,lewo */
+   font-family: sans-serif;
+   font-weight: bold;
+   border-radius: 6px;
+   text-transform: uppercase;
+   transition: .3s;
+   font-size: 13px;
+}
+
+.navbar ul li a:hover{
+   background-color:cornflowerblue;
+}
+/* ========================== */
+.wanted{
+   background-color: #c63d3d;
+   display:flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 20px 0;
+}
+
+/* .kosmici{
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: row;
+   flex-wrap: wrap;
+} */
+
+.wanted div{
+   display: flex;
+   justify-content: space-evenly;
+   width:100%;
+   flex-wrap:wrap;
+}
+
+.wanted div a{
+   padding:20px;
+}
+
+.wanted div a:hover{
+background-color:#F1B26F; 
+}
+
+.wanted div a img{
+   height: 180px;
+}
+
+.wanted img{
+   margin-bottom:20px;
+}
+
