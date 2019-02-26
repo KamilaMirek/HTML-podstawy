@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Position absolute/relative</title>
+   <style>
+      *{
+         padding: 0;
+         margin: 0;
+         box-sizing: border-box;
+      }
+   .zielony{
+      z-index:78;
+      height: 140px;
+      width: 140px;
+      /* nawet jeśli nie ma width a sa left, right, to wypełnia całą stornę oprócz left i right */
+      background-color: lightgreen;
+      /* margin-left:40px;
+      margin-top:30px; */
+      position: absolute;
+      top:90px;
+      /* right:20px; */
+      /* bottom:30px; */
+      left:100px;
+   }
+   .czerwony{
+      z-index:5;
+      height: 200px;
+      width: 200px;
+      background-color:palevioletred;
+      position:absolute;
+      top:0;
+      left:0;
+   }
+   .niebieski{
+      width: 600px;
+      height: 600px;
+      background-color: lightblue;
+      margin-top: 50px;
+      position: relative;
+      /* relative dotyczy dzieci */
+   }
+   .zolty{
+      position: absolute;
+      top:0;
+      right:0;
+      width:100px;
+      height: 100px;
+      background-color:rgb(218, 218, 54);
+   }
+
+   </style>
+</head>
+<body>
+   <div class="zielony"></div>
+   <div class="czerwony"></div>
+   <div class="niebieski">
+      <div class="zolty"></div>
+   </div>
+
+
+</body>
+</html>
